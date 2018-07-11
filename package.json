@@ -1,0 +1,11 @@
+{
+  "name": "marketplace-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:BobbyBorisov/marketplace-react.git",
+  "author": "Bobby Borisov <borislav.borisov.tues@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^0.0.5"
+  }
+}
