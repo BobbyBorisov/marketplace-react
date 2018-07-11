@@ -5,7 +5,13 @@
   "repository": "git@github.com:BobbyBorisov/marketplace-react.git",
   "author": "Bobby Borisov <borislav.borisov.tues@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev":"next dev"
+  },
   "dependencies": {
+    "next": "4.1.4",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "truffle-hdwallet-provider": "^0.0.5"
   }
 }
