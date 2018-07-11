@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import factory from '../ethereum/factory';
+import Layout from '../components/Layout';
 
 class SaleIndex extends Component {
   static async getInitialProps(){
@@ -9,7 +10,11 @@ class SaleIndex extends Component {
   }
 
   render(){
-    return <div>Sales: {this.props.sales[0]}</div>
+    return (
+      <Layout>
+        <div>Sales: {this.props.sales[0]}</div>
+      </Layout>
+    )
   }
 }
 
