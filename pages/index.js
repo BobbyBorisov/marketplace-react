@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 import factory from '../ethereum/factory';
 
 class SaleIndex extends Component {
-  async componentDidMount(){
+  static async getInitialProps(){
     const sales = await factory.methods.getDeployedSales().call();
     console.log(sales);
+    return {sales};
   }
 
   render(){
-    return <div>Sales index</div>
+    return <div>Sales: {this.props.sales[0]}</div>
   }
 }
 
